@@ -161,12 +161,50 @@
             <ion-icon name="heart-outline"></ion-icon>
             <span class="count">0</span>
           </button>
+          <!-- <button class="action-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="count" onclick="toggleCart()">0</span>
+          </button> -->
 
-          <button class="action-btn" onclick="toggleCart()">
+          <!-- <button class="action-btn">
             <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
+            <span class="count" onclick="toggleCart()">0</span>
+          </button> -->
+
+          <div id="cart-toggle" class="action-btn cart-toggle">
+            <!-- <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <span id="cart-count" class="cart-count">0</span>
+            </div> -->
+            <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count" onclick="toggleCart()">0</span>
           </button>
-          
+        </div>
+          <!-- Cart Sidebar (This will be inserted from the previous HTML/CSS code) -->
+    <div id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-header">
+          <h2>Your Cart <span id="close-cart">&times;</span></h2>
+      </div>
+      <div id="cart-container" class="cart-container">
+          <div id="cart-items" class="cart-items">
+              <!-- Cart items will be dynamically added here -->
+              <div class="empty-cart">Your cart is empty</div>
+          </div>
+          <div class="cart-footer">
+              <div class="cart-total-container">
+                  <span>Total:</span>
+                  <span id="cart-total">$0.00</span>
+              </div>
+              <button id="checkout-btn" class="checkout-btn">Checkout</button>
+              <button id="clear-cart" class="clear-cart-btn">Clear Cart</button>
+          </div>
+      </div>
+  </div>
+  
+  
+
         </div>
 
       </div>
@@ -1074,7 +1112,7 @@
 
             <div class="showcase-wrapper has-scrollbar">
 
-              <div class="showcase-container">
+              <div class="showcase-container"  data-product-id="black-sun-glasses" data-price="3999">
               
                 <div class="showcase">
               
@@ -1095,17 +1133,14 @@
                     <h3 class="showcase-title">
                       <a href="#" class="showcase-title">Crystal Embrace Bracelet</a>
                     </h3>
-              
-                    <p class="showcase-desc">
-                      
-                    </p>
-              
+                    
                     <div class="price-box">
                       <p class="price">Rs. 3999</p>
                       <del>Rs. 5590</del>
                     </div>
               
-                    <button class="add-cart-btn">add to cart</button>
+                    <button class="add-cart-btn">add to cart</button>   
+                    <!-- <button class="add-to-cart">Add to Cart</button> -->
               
                     <div class="showcase-status">
                       <div class="wrapper">
@@ -1172,9 +1207,7 @@
                       <h3 class="showcase-title">Fosil-Watch</h3>
                     </a>
 
-                    <p class="showcase-desc">
-                      
-                    </p>
+                    
 
                     <div class="price-box">
                       <p class="price">Rs. 9000</p>
@@ -1238,9 +1271,6 @@
                 </div>
 
               </div>
-
-              
-
             </div>
 
           </div>
@@ -2410,7 +2440,11 @@
   <!-- - ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="cart.js"></script>
+  <!-- Include Font Awesome for icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    
+  <!-- Include our Shopping Cart JavaScript -->
+  <script src="shopping-cart.js"></script>
 </body>
 
 </html>
