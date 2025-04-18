@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewellery Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: rgba(171, 107, 16, 0.671);
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: black;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #444;
+      margin: 40px 0 20px;
+    }
+    .collection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .item {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 180px;
+      transition: transform 0.2s ease;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .item .name {
+      margin: 10px 0 0;
+      font-weight: bold;
+      color: #333;
+    }
+    .item .category {
+      color: #777;
+      font-size: 14px;
+    }
+    .item .price {
+      margin: 8px 0;
+    }
+    .item .price .new {
+      color: #561d75b1;;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    .item .price .old {
+      text-decoration: line-through;
+      color: #999;
+    }
+    a.back-home {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: #93109797;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.back-home:hover {
+      background: #a41c61;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Jewellery Collection</h1>
+
+<!-- Earrings -->
+<h2>Earrings</h2>
+<div class="collection">
+  <div class="item"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSrJFmGF752nF7fr5F74yv85zHF1ooKXA9OayhGxSpvNUfdmdY8UNzvHU36-tu-3CX65Y8e3fVNd8iWJ1Fad6PGQU2voeFX_VljpYxIZzs&usqp=CAc"><p class="name">Stud Earrings</p><p class="category">Earrings</p><div class="price"><span class="new">Rs.399</span><span class="old">Rs.550</span></div></div>
+  <div class="item"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT3NI6pZV3URJRmHCmBNAfDqeyj4AXRD3soC6-GGw8LyE3Cgl6aZuNgKYk88UFtl5AoH0D64nIJ6dyH6uPJMEbQfBKmA-_PK6QAKjhSz3wCC3apOjIPotf0"><p class="name">Hoop Earrings</p><p class="category">Earrings</p><div class="price"><span class="new">Rs.599</span><span class="old">Rs.799</span></div></div>
+  <div class="item"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQSwSAZXbPJKbUQtjSTRVuOsStKXpA9rOeWQpPYTa9Yb53J2xWtxCAgXEZ0kSK5AryoBi7LZzI-YQ8yxr-FlGIC9sRSx40OGkFJ0ipyi1vL1oewSrSy_8su"><p class="name">Dangling Earrings</p><p class="category">Earrings</p><div class="price"><span class="new">Rs.749</span><span class="old">Rs.999</span></div></div>
+</div>
+
+<!-- Rings -->
+<h2>Rings</h2>
+<div class="collection">
+  <div class="item"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQreAJYVs-C9Jc2IWjdBuJaK0tvPVY-70cG9V4j42fOGUWAWk2-XbniIWuDbOyT-YQJSPnQU3-AvIy4KCPTZ9xCVeGL_hSqDnU_W2uD5FuST3PegQ1K9yAuMg"><p class="name">Gold Ring</p><p class="category">Rings</p><div class="price"><span class="new">Rs.899</span><span class="old">Rs.1199</span></div></div>
+  <div class="item"><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT2W7fda3HtPrZq7PSbmdOQiZ76asWHEISdGJZtfUsi9-qfsb3NL1GP6tsy39l1W3X25aaGo_4JgDxnLfK_XCxW03MJtYw4MZ39_kgrbljEjqbvq1mf1RLmFw"><p class="name">Silver Ring</p><p class="category">Rings</p><div class="price"><span class="new">Rs.499</span><span class="old">Rs.699</span></div></div>
+  <div class="item"><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSC3C7wEGvgcsZblbNtqUkwnCHEoXfYrReP5nq2FvJsF7HuRd0FNHya5I-M7Aw3doVb7xskk4yy8pLRRIuRkMSIPqW1g4a-3aVF4tAPCAMt8hyIfcz8oiDQ"><p class="name">Diamond Ring</p><p class="category">Rings</p><div class="price"><span class="new">Rs.2499</span><span class="old">Rs.3499</span></div></div>
+</div>
+
+<!-- Necklace -->
+<h2>Necklace</h2>
+<div class="collection">
+  <div class="item"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRcUo4XHB6DHSffIJviLt6Rqzr00RRtG6xMSDqtyXzpnAeRrfcygEm3mRchTiUlIcYRHvAZY3mJVegtnmnV7r4Ioh5csZZt3uofnNTXsz6j"><p class="name">Pendant Necklace</p><p class="category">Necklace</p><div class="price"><span class="new">Rs.1499</span><span class="old">Rs.1999</span></div></div>
+  <div class="item"><img src="https://d25g9z9s77rn4i.cloudfront.net/uploads/product/868/1659006554_ad75dd80f7f935ef52b4.jpg"><p class="name">Choker Necklace</p><p class="category">Necklace</p><div class="price"><span class="new">Rs.1199</span><span class="old">Rs.1599</span></div></div>
+  <div class="item"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQCTWw72waXZ-ZEn6um4Ojb4gbLlrbJX9Wk-1VngTeAIGmaKe72MlNYnxZTPHZJSh-hfTQaJ_DB5qugN2pyloAI5pvuFkYmcHPuIEubS3r3KvrTQfG54nOIQvPq6FpRZ6kIuEFhSIZBS4KT&usqp=CAc"><p class="name">Beaded Necklace</p><p class="category">Necklace</p><div class="price"><span class="new">Rs.799</span><span class="old">Rs.999</span></div></div>
+</div>
+
+<!-- Bracelets -->
+<h2>Bracelets</h2>
+<div class="collection">
+  <div class="item"><img src="data:image/webp;base64,UklGRigYAABXRUJQVlA4IBwYAABwbwCdASq6APMAPkUgjUUioiESvDzYKAREs7aVRgJ6vjm3+PaAshes1AOXmQ+LfXf2bR9Uxv07M/o//tG7U52X0+/4DfhN6Y/zduP6QeGv4l86/aPyu3d/UX+O/ar8h/eP2/9lv9x9oHpn7+/5z1Avx3+S/4b8x/bQh08cfkf+T6hHrL89/zP9w/JT0qdTLvL/ufcB/lP9N/035tfFX+G8EXzn2AP5x/XP+B/afzC+lL+S/5v+I/NH2ffnP91/6v+R/Kb7A/5N/Tv9v/ev81+0nzeeuz9rP/N7mX63f+gkQyoPb411lxLT+USMABzWHmxyz/i8r+UdYzTAHdJBb6Jkhb7QwiXl5FAAiU3Ccs5FLoQgIF3XHT8z3JijKJ5L06MH7WiHtNKCW0r1/z6EPQUIARsenogG88IHIST1jH/aNKDuKenbAs964wvpFAOAFOGe4s4ApyOtB+ZdsYpcvFGG4BwbRIm2G3ppfNrGiTIyILnDuvLHKi3QX23xT3d0X8SB/gsCm9v3PH1DHb6FPkbFZfD8uNxEgGp8gwtomNknIcTJxmrzFFsRAhpi7eZHRJ6bAuBrHpcBQLw/lcHnnpTyOGZ0PC3sSsQGeKSzqEgaLU8hF2gOJZej3PSHr5sIZMKB1oNUlAoP3iQy1KI7Xq9fA1od9mVF0EKLLKBEiiTGyeNcF9JxnrSUS5yGmsxEdUYUJRmu+C0pM1PRiWLv6XLZV7rJvq+bWuor247Hz4hs1U3XDHWmLt1Y6mJ4z9bxo9d/mRFBHCFeD7Umjgo5tEgUSg5j7qVOUf5WhyPJ9GPnlq53UixFbGS4tVr8yKHa1YV8sbQ5zkLzVxWa+sq+8Hv4NCqkkQlWKJtPxgi0kyC3O9orB05g19BqBF+7bhBhwgar8ZYkA3TqivMdpOf/GhQ1XHZpCTXaKR99MkTmIMxfNrWRe1fcI/4LjG83qcE27oe0Muh47hwGcNgUE4SmmHRt9VUbjv93gC7mR6tlHBfIJ3Pf3GVbA0aQv5JDcv2IT+MaxOu3vVLZI4xkmOOpTbcYfuFvGouH0sVah0CUd52Gd2ESmH5q7xrSx7dFILUcMM0EfewDvXQtDvtHcGp7c9EK2K/++/jiOsaIiCtu8gvl09+ltt3wAvv9yIRlky2/wZ1aBePvupQd2GWhecDh9Bxy+4OVvyDzX/A40Y8RhK05zY2FjgAA/vzqU48Xw6oQZwkhqlc0iNS0q1TDJNLd5nxewFFHGwIpDTErtp/9idfi89FyLlJiISba5h5pVh1GTFqFX7j6Gxmosfq/T2y5338KW0D+SMhoFb4euhJ1kwpjbhnf+MbxsDj6mfxRhH+yAsYsbGwzSx5ENYCTxonmCNVkw6jd8E9Xch19e6Ci5DuyTFaZbay6Ech5VyCknOvUIjpDvn0uzvTgxZTVjB5GcFH//Feuabauj4I7G91flDPA8TkOgItRK0pxfM+viTrpQziCeMk/IejMoVQo+15zaLE+DJPEAnoJG8GEr1eXEcx31TXf7OJFoUaAreBPwDMjQkLzJwfjTiTYHSEBT69YkRO1hafUJ8P8vIQKWLOywcZb+wxIpaBXyHCp1hXEHm9vS0KmddMdbwR+u/Wz3CU7eA21co0R73xSQbwQEuReNKIXrzXz+9DczT7UcYQuDvvaWfTdDYmHB0qnARHSL3SnlKvWCbO3kr4bInxWJ9ZLkD8DUUHuvMXpPSnjP/N30iJF7+OMepC57nvyL8aJTI2kdPYjefnXBapy+19aTwQFrKf6zUIBglqu45OMn3Ky0S7vu1LUWe70lLvU3QaIS6HvRZt9A0qBSfU2uGDbTR5LJAOCpgNe7ZYng2Gs2mAzduUan39J7OZkTL9BmxRg5Xbb7MY+OoQ7nDAx46d7TcPoEi/3gyRRieOgIQPaK26yTWU7CABLtBft2uswiPW1RQWo2LT/ZVh1bGvEbhQ0863aPazYuPkjzSqN9cKJS9R+V675CiswyDyfqY35B17EP+OMP6HCJvC+TVjIS4OUOBFhRXcCKC+JZNDuwIloZJJjM9LG+J5EFQW+37m+Z9qkIMTrdYReFiqMuY9jtf/bBo228x4IE+nGUnUBTOFtUghrLYsjs7ynMNO5cg4HN/xKqygygJT/6zScOihle7kLF7V8muCVyCNKgUJ4DT7CEn/2T38EcqgOAHpmAB2yhROMc2mA6E8dRcssRg1hiFTnbYqn1XfRht5pHOHLh6+SyBQxCdnd8Pm0iVaLF11107CtzuMHtBAjSWJ6FqyIv0sW3m9G05NqJWMz3M0+qB8QDRIjalPvzYBqADWjynO+n6PzwuhpqGezyjfPQdKoklhkVXEDRbyupZWyBIzq3eqZLiOO7BKu34+4n68iK2tZdHVyw4j68tJ33m7wP/oRXGDx+XvsZQX8on++xQpphLU5Rr8tY2i1BO9R0sNbQbloLhSkwKY1NZmNWgZvAC+Q6kcWzL2TIonMIkwCtFlIE9BSETyodsBBauaNxCn4PEWRS4WJm36oyfs9e/w228wcRC7fjNd/nWEOaM8n+hc87X1wJhhKZzqMAQqL/8HO80O7NVIsIv4A+iY2fDwhu2xMxZf7CIGXI+5Gfvf9yaPJGZIWEBDlKNIqguLFBCcViJBk9I7ovSv1ILCgTPmgSdlIGLZWKM7OjXWcl5mqHb58piJ6rD6bAWHBviHSMTDU7WMO28rux+zUl6WquG/8MMK8NSr4aJsSdQSjZowUGXn9ApsLEPI43WoQr50/9+xPXlXKX8/Osy+fWicuqGDeLIuMhV0QWVzsnve1NScKYCNA/H5K8Kke7vKpvw2iDdpuWx/hg2JHLXawpppgRehzVcOUz/RLSC9oowj/MfUrjHjV/OLftX6Kv9hLn8buGB/1YAw716s9ph2UPDLsSe14ZD2PDe8LPBKIqC7hLXQOPUrpzDITbxPEHdAIiSTZ0wZn9nzPjYdfLZXSWSGrPI2SQj6AFbElGiXaBBNCif0os2+WdkUp1frpGKQFQz3kvWfIKuuXt2Hhp7zT2WfPVdOmF1diZGrCrnGM+4th5YhrZ/oLS/o57E408CQRSJm/iury82rAaIzmKkK7WtRKC9EH0FFOBIqOsvH90pEnzqCbSkQJqWfyzIy8HboTREKSDxgoi/yaYs6utw8uaEULcKe+ZxEdOT5718vWFfDI8Fq7xZOdg7iQGUoVfEIwQ5+T39mhNBuSNcpeew3kYZWBgwxohUTrDMdN6o+pyoGoWHkPRL9C+RBq2/naA7byTRD/gd7Auc5Xbd06/DpZOMDfijQerVgcJzTJseTMDD7xz+AGR+YyZbt/Huip0zmoF1YUrxy/jGHg9paCwh8qNor+PSJiIMlIwtKaFG/Bk/AwIkHO3UN2jZc8g3nusKRGKCo8OtfDp5/Gss4p6cv3NUjxLbhmpsMQOIThp1t2vg8hljmxM1pgHCeRCXQJGbW0CtQkELgRZObhPEV7M+plmmX5nXjRPO5c0hZ8PCh4PtkkMkCwGLticLrR3Iz2dl7CHQ8EBkj050TgBp/4iPH8aaE17I5yup3h5RY6GpKwi0HiyIed8Pe9JS/tt4MOHhOnqr905K/JKtcplWaj1fpmM3KaVKLUS8KY77lTnle7oYUGZJe7Syp/+mN1xTEr7kBgdn42645i4AfrH8pwHC2jND/NP1ImNS7JbQcL1/OAEcqbrqDv+LmWyCYwH90cLsVoqpzzQ7CMQVLzfjAxFL+mUTL4XunAR/evxoWXXlMNg1t9UtQdgrmr0xqvcB9iSiQDxCr0ZTtQ01hJSpXJH+oooRaWYLCSxTojYyQKMouWwcpmqpTD7NzpAtgHyRw3hwzHrwyE26aA8hLM6R2HkFwmbJC0msFCRsr8XoymR/2sYKP3smZLDFVwRysvmO/r8btlzRREpRnwz+4FmaoE04gdLEYxLiy8z+a+2ACbBCv+oOFawKnnlBaWK5tKFb2TCUOIjsEA6ge7i0n4XI4TMsVfTiAhhAvMf2gsAw+Y0i6Xwoq46vpQxUTs1JP2LnS/84ZEb2+45VoJGiot2DsccboS6EAuEYEva+Ar5EIgNc+pxlKSH2BbYpF+n72UWdER5La5soanpi/6yyt768xM0+I11a8j8t04CBvIIHpKinstGMWZIc+IAbJQA3gf+bKGs2DGEhwLufy0+4d3/nsr2xcNEEvEGLHfsm/FkdC1VYfY2CB/JFlUeQRd7Y+62fb5UPqxP+CvIAHpZZFgrPgqU75qe8SisACg6PApEj+1HG9g9u+5UbVLIwbtJeOBsP+BX5O/A0krnfY3Z//fmMNlPXFM0CngfAtXexgl9LhpU7c9c1HZWZO6sFyYD9QpwhQeB8IVm02T18NTB8MouHbOEEC12pM54cc4OwoAgXeBdbYmbkpzHLTuF47WD3Qkk4Hm75waalh7f1bn4XwT52eBwml83ojw7qRxfVt1iPNyHKhnPiQsVus8PicGzmFhVpW8hs95fV6tKk0RqVIgrOcciy/weaePACeOnFTkxX0Aq5rFlJ4FfxmR81YnGzcwFNE4L8tlnoT0tnFngq9xtR8ca4T82fQNVaObcrvxLuqy3r2zxQBjo/IvC52vecO3IVUB+Apv8QcMT/Hjf6ia36c5yjUhop6pgQKnJ5KHzEqiAmhAu9UgXOUT2toDKEma/EGHZCn3NztYxuvoZt2lSENNmbhmZ9DbnN6aEkSxCWcbW5HDQbBvNeL8rDmKKnHYEpMe5hyu/ArsAdgeb78RQNfYsoOO8Zei/7WVL1CsdrCIIGH0iL2x8W+AzssWWtG0vm4NwmIvZ1DoWn1RrvfaSDLrRh/9Ry0ZbNbJuf7frQkfjvOWHEQahmCrX1Hi+ea8RXR27U6opjscgLnAxSvaf8aYqAXSvKeLT0WVWx7FrMq4bsKP+XbIxqPWVR+jCQkNB/j1OrigsJRgnghqEYtLbr9vo7H/mkptOPqPrkzPi1xiBomxUaYL3i25pN89Z5QthWekqG1BPM1S40Bzep9oY4/FB8jB85sNmOGOOudVcTtJZLGv8tylIQ7u2u0UfZHK2VxLlhdp5OF8XR+jmhqTzCPPaxIFnF6H7+NSn5Ik3AgIOClmjvpwtlinIEX9v2Wz5pMdpiTrDqWwR1i8MmBeo/lixN5LYre1NgSJKRRB90tbRXsNUUtOzeF4Hr4amiBxbnNdYWiai8gb067G5WFi7A2Qd2PAHEXEZJBVgzUQu9josyFyLWRuZRhbIb3zcc6Fh9hbXYYtq1oYx7RtTZwUy9PiVGPpVjmptHsjxC73up030VpND3YXozYgYODWwGkLdMZUMbI3P7T3S/SV+vs1qgp9WXHQLFeW54wIsxkPhrrWivrf9HdjwqmOQgdkYZ1xq1z90CQsTsg60XyvwXXXxdbTV8QIOX7lRVYxCduZ/YinptFiLDxZqVg2lFJcdCNgJm2Xm5MVdg1DS4SSPq41FhIiXb5hQscioGv5EjrOcfwiHjDhAQAqMnRJr5+EQgt8Yvwp52WP/ES9R9+wY3X2UvuEnZzvx4XzAlLWK+lyYY8OOp33N2s46J5TC2jkkPDeXcke/rb4UzzRSPpHZjVxK7wgxPql7BUEJ3Qd3JFH0P+bgc/ZqROn+ieFNe4GrnQy6DFIVInZV7K5FG8qSOhK8UPUQ2YE+kLRTv0DzKD0jKYp6HB9apR86jGv8e4F4PSbnRYDgYxrGACrSjv61eeWwtdj41+IJ5xXtoNa/jqirNSj4erda+2/DKFGvnX7i3Qn4YdVzRVo2WR5aZmf/oKVAts/xoArPpVY2NqBy2ZOg2sKqkyZrd4aZgc5lhahXqskLMJPi1pp8B2fp2aGMGLoAAdqrKH6Tl+/elB8UApQG/cJTgk2dWL0NrmlUDgALpawZS509IqeEsv72RW5Dg01fRUNinEeWIob460GzEyca2cl18oVn6zJCF0xT7qKN6FeGPUVMzW6fxGHzdCHZrukX/Y8HzLYOGIVdZVtmhILq9hPElK6ikRkZmTXrhNNja0eI+lTvAPwedqCHnx5bgVK5l4nw5WRzDO5aITDT/3Ojp1XYVqmiTLUBygjhm50q/RGAGflUsbdJD9il08zdjDxm9J0WtKQNekQ/ZBx7/QNgV6mzLBPNTtJmkpE7coV+YvSL7oJMGUiKWtrhtYoYCwhuz8aw3v4hQEvYp8Nx4g5D+BzZUdmSmSwl2niIsSjll2TIYsS6C14AeKOp16GBZV1X0xHeQIF6CSFL7zI4vpJEXNgRr7PDzL4DrbPlmiFfNhpUBxtvTgvkp0Z1y8PG8lBlu/423GQYhNRTXdDnqPi0YJ3087uo2Uz11vClQvaPa/B+8rppRf2niulOp47fSSw9MV5GRj4LWRpa3UBdmU/v77ZGd4TGCst6sBxzI+AWOst9Wkq5gdmQnNHN2Sx7KbZYqsMBX0DeEzzqC6XdPxK8ddkwLgjf0XhTo6soMDugKg0k28Zs3L3OSi71k3smMriL6fnvoTEq2in38yjLBdP7WdEQ0CjbKt2AXGr2BRdrbdayfw1ubVGJtyo2CEIgmeNdW27Ei769qGhHFhD81JvpyE7hEqVrVSJYSs3VeoZbqMaPO6d/t/Ls+6Zy2RL+Js1Uq/zY21Si0CpNramd2/EsU4su34zU7taKbkvgqE/nGR0xel7swlKhcj2jXrJzoHcVdIaYhW3uAgxQOouIn5n2FbN0f7y7DP21a/7DTOG9KVevh8XFmbDmABLbdZTSxyXqzmpShVyyfz4cTkKpc6iL+RbOp0ARchz5GxYJHYdUIE66VY2HahZ5+s0OrhGOFIqSVOQPr9BJJJ6u4O3OK7/rI0v8NLQ2NgzIU4wrDUcEFW+O9wTL6ikgqfcLfkXo6ZrSep6otngi15unKBoKctF1lahtWbeGm6UBt+Sh8PN8kY24E+zOmGaClJtPJUqTyzd5QkJjQXRvCqtQKwE/0BHVWiArGUtwtkAiki8oOMrM90zzCPtngkOXSKd72AOMqYcdceJCJ0Sh+a5DeilaCNv7K+RezaD4I2CGTcFUHRqFmsU397k9oRQIzW6YWcrTP5Jun2+QAoxdinDrun185e0ybxkUwrjnecjTyPvB1cW9lgxmEdrIb2ckyp0IWrCyGMIkAa6e/eo9+RE6XMNN5RsSMWhpWDim8FIR6WH7cpgdDiZL1Sr2CDkpq5vVKP6RRwp0u9OPv25M1CuFQwTbtxfMhMeqn7VV92mKSY6yKN+S3+nNYEfYy0v/MeN8escZHXajb3iQ8FyUlr6ORHWevFISokCi/Zf7RibvCsIES0iyjaL1f5ykSdhP2diNjur13stLDMe7kl2uCHViq/oqeaKJ2q2nCORXxffDPV7XPAqPWLS8joQf4u8Sl4hIkfVbOy+U/dCn96O7MNYGC3obAu5hkcv1Et3P8tX28JU9kfa+u1ewzLKzFkHQj/qrEfTNq4rxpnoOy4Z+7wn6LMfscsUGVwS3gOXzb3SZRYJXwgx07qg1aTAgWju+IMN2v1k/RT6/YQ6MMeNG/3fkAOYBV4cIQYMuUpKAQD+hyzdzOkX6gkTAq1JSP4JXqoWtEXjvpSIbog3/ClEgzkBAKPZYeAe3DPTvcd2eJOWkZjd/0LI9PuQ0Pt7XcNhq6D1Ye12WDdOhY/QbNm0RxtqDrC9nNtSqFS5rF37smNMp5BiPffN9GSahyU5cMzyP+fy+EO1zcsRfGMs0nYamY1zZWQy54y6wet8BqjmFwDJCjiW4POJg+V49jX+r8qGQeNur2LN8t6Krrl+yxdgfXaWCJ2fTK9ol7LWKQsoXgx9RIiH3Xy58C5gTK0YtcKNLKOCCd5aEW2RGmoQ7L2sfCN/mXE4NyA3Mf3KDNkKH/H9hgd5l8QGzCiVlCQi4I/Zvxt6XGHkrhbKqXNvzmkGGd6c/QYgVZN7/GT8FtWo/Ff4QjwsACoGbxlW4s4ZfMLIYEcW9Q+pytPd+xpWAzrBMewDLSWGEfychaeycAOkfkMJoj7rxRYGekIazIqzcJIfweumoSJusrCccLxoumkKW84JFwSlwlggTZpYxEcPVON6LIRL8xk61BibOPgEnqR7c4gcpyz0dIW6xFvuPBe3qbqPEF/pKZSOCOf7IVTcid9q+AjB3CIf7On+X7O/NOLNa8EprfdLOsqvTnyB5mNLgJfR4BBZDhYGGv2O82/cBz0DShGW0iFsOUaZQ7OIYAlu9B3c4IwEJB+t29bJTgJHxzClfaYcgAAAVqU6oMAA"><p class="name">Charm Bracelet</p><p class="category">Bracelets</p><div class="price"><span class="new">Rs.699</span><span class="old">Rs.999</span></div></div>
+  <div class="item"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTwVvl9g0nPLhX1QDUBr5mE67aSj_BBRq-2t_XFdqKFMt06WBfexm54WNLEtSRcO7s_xaR7wOlTZ7-SUWlJKSMeIMnPbm_PfSZNW1aGg7s6dNI3H6VZdzG9GQ"><p class="name">Gold Cuff</p><p class="category">Bracelets</p><div class="price"><span class="new">Rs.999</span><span class="old">Rs.1399</span></div></div>
+  <div class="item"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTSWTbXLfhjg9iy6KmKSg4QRjVtGmO-87s9xpucGKQDkrTY9YNzW0n4UdnkvW3eqnUHBcaxMTUu4wPah1Ok8EOCm-fxT8hZoBL7ap4Cn0e378siN9r_u6YHEg&usqp=CAc"><p class="name">Beaded Bracelet</p><p class="category">Bracelets</p><div class="price"><span class="new">Rs.499</span><span class="old">Rs.799</span></div></div>
+</div>
+
+<a class="back-home" href="index.html">Back to Home</a>
+
+</body>
+</html>

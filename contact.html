@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shopsphere</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Feel free to reach out for any queries or collaborations. Our team is always here to help.</p>
+                
+                <div class="info-item">
+                    <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <div class="info-content">
+                        <h3>Our Location</h3>
+                        <p>Vandalur, Chennai, India</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p>shopsphere@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="icon"><i class="fas fa-phone"></i></span>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p>+91 98155 68254</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contactForm" action="send-email.php" method="post">
+                    <div class="form-group">
+                        <input type="text" class="field" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="field" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="field" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('.btn');
+            btn.classList.add('loading');
+            
+            // Simulate form submission
+            setTimeout(() => {
+                btn.classList.remove('loading');
+                // Add your form submission logic here
+                alert('Message sent successfully!');
+                this.reset();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
+

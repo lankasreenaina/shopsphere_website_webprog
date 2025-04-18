@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Designer</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="shop.js" async defer></script>
+    </head>
+    <body>
+        
+        <header id="navbar" class="custome-nav">
+            <nav class="navbar">
+                <div class="section-1">
+                    <a href="index.html"><img src=".\assets\images\web_logo.png" alt="logo" width="170" height="50"></a>
+                </div>
+                <ul class="section-2">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="custome.html">T-shirt</a></li>
+                    <li><a href="hoodies.html">Hoodies</a></li>
+                    <li><a href="sweatshirt.html">Sweatshirt</a></li>
+                    <li><a href="women.html">Women</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        <main class="custome">
+            
+            <div id="tshirt-div">
+                <img id="tshirt-backgroundpicture" src=".\assets\images\crew_front.png"/>
+                <div id="drawingArea" class="drawing-area">					
+                    <div class="canvas-container">
+                        <canvas id="tshirt-canvas" width="200" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="canva-div">
+                    <div class="change">
+
+                        <div class="reverse-option">
+                            <button class="reverse-header dropdown-menu"><a href="#" class="drop-btn">Reverse Image Option</a></button>
+                            <div class="dropdown-content">
+                                <div class="front-back">
+                                    <div class="front f-same">
+                                        <label for="tshirt-back">T-Shirt Back:</label>
+                                        <button id="flipback" type="button" class="btn" onclick="reverse1Image()" title="Rotate View">
+                                            <i class="fas fa-retweet"></i>
+                                        </button>
+                                    </div>
+                                    <div class="back f-same">
+                                        <label for="tshirt-back">T-Shirt Front:</label>
+                                        <button id="flipback" type="button" class="btn" onclick="reverse2Image()" title="Rotate View">
+                                            <i class="fas fa-retweet"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="design-selection">
+                            <button class="reverse-header dropdown-menu-1"><a href="#" class="drop-btn">T-Shirt Design & Color Option</a></button>
+                            <!-- <h2 class="rev-header">T-Shirt Design & Color Option</h2> -->
+                            <div class="dropdown-content-1">
+                                <div class="custom-selection">
+                                    <label for="tshirt-design">T-Shirt Design:</label>
+                                    <select id="tshirt-design" class="tshirt-color">
+                                        <option value="">Select one of our designs ...</option>
+                                        <option value=".\assets\images\batman1.png">Batman</option>
+                                        <option value="https://images4.alphacoders.com/967/967289.png">Breaking Bad!</option>
+                                        <option value="https://lumiere-a.akamaihd.net/v1/images/au_portrait_grid_marvel_logo_2025_mobile_1ad65200.png">Marvel</option>
+                                    </select>
+                                </div>
+                                <div class="color-selection">
+                                    <label for="tshirt-color">T-Shirt Color:</label>
+                                    <select id="tshirt-color" class="tshirt-color">
+                                        <!-- You can add any color with a new option and definings its hex code -->
+                                        <option value="#fff" !important>White</option>
+                                        <option value="#180A0A" >Black</option>
+                                        <option value="#FF1818">Red</option>
+                                        <option value="#008000">Green</option>
+                                        <option value="#ff0">Yellow</option>
+                                        <option value="#4D77FF">Sky Blue</option>
+                                        <!-- <option value="#F473B9">Pink</option> -->
+                                        <option value="#D8D2CB">Grey</option>
+                                        <option value="#800080">Purple</option>
+                                        <option value="#8A39E1">Violet</option>
+                                    </select>
+                                </div>
+                                <div class="random-color-selection">
+                                    <button id="random" >Random Color</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        
+
+                        <div class="text-selection">
+                            <button class="reverse-header dropdown-menu-2"><a href="#" class="drop-btn">T-Shirt Text Option</a></button>
+                            <!-- <h2 class="rev-header">T-Shirt Design & Color Option</h2> -->
+                            <div class="dropdown-content-2">
+                                <label for="tshirt-text">T-Shirt text:</label>
+                                <input id="tshirt-text" class="tshirt-txt" type="text" placeholder="Enter your text here!!">
+                                <!-- <input class="span2" id="text-string" type="text" placeholder="add text here..."> -->
+                                <button id="add-text" class="txt-btn" title="Add text">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="input-selection">
+                            <button class="reverse-header dropdown-menu-3"><a href="#" class="drop-btn">Custom Design Option</a></button>
+                            <!-- <h2 class="rev-header">Custom Design Option</h2> -->
+                            <div class="dropdown-content-3">
+                                <label for="tshirt-custompicture" class="input-field">Upload your own design:</label>
+                                <input type="file" class="input-btn" id="tshirt-custompicture" />
+                                <p>To remove a loaded picture on the clothes select it and press the <kbd>DEL</kbd> key.</p>
+                                <button id="btnDisplayFront" class="btnDisplay">Front Save</button>
+                                <button id="btnDisplayBack" class="btnDisplay">Back Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <main class="footer footer-custome">
+            <div class="footer-container">
+                <div class="col-1">
+                    <div class="row-0">
+                        <img src=".\assets\images\web_logo.png" alt="logo" width="170" height="50">
+                        <p>The customer is at the heart of our <br> unique business model, which includes <br> design.</p>
+                        <a href=""><img src="./assets/images/payment.png" alt="payment method" class="payment-img"></a>
+                    </div>
+                    <div class="row row-1">
+                        <h3>SHOPPING</h3>
+                        <ul class="footer-shopping-link">
+                            <li><a href="">Clothing Store</a></li>
+                            <li><a href="">Trending Shoes</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div class="row row-2">
+                        <h3>SHOPPING</h3>
+                        <ul class="footer-shopping-link">
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Payment Method</a></li>
+                            <li><a href="">Delivery</a></li>
+                            <li><a href="">Return & Packages</a></li>
+                        </ul>
+                    </div>
+                    <div class="row-3">
+                        <h1>NEWLETTER</h1>
+                        <p>Be the first to know about new <br> arrivals, look books, sales & promos!</p>
+                        <form action="" method="post">
+                            <input type="email" name="email-id" placeholder="Your email">
+                            <button type="submit"><i class="fa fa-envelope-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="hr">
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <p>&copy; All right reserved to Shopsphere.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Include Fabric.js in the page -->
+        <script src="fabric.min.js"></script>
+        <script src="dom-to-image.js"></script>
+        <script src="custome.js"></script>
+        
+    </body>
+</html>

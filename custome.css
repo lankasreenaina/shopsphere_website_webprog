@@ -1,0 +1,127 @@
+body{
+    font-family: sans-serif;
+    margin: 0; padding: 0;
+}
+/* CANVAS */
+.drawing-area{
+    position: absolute;
+    top: 85px;
+    left: 162px;
+    z-index: 10;
+    width: 200px;
+    height: 400px;
+}
+
+.canvas-container{
+    width: 200px; 
+    height: 400px; 
+    position: relative; 
+    user-select: none;
+}
+canvas:hover{
+    border: 1px solid black;
+}
+#tshirt-div{
+    /* width: 452px;
+    height: 548px;
+    position: relative;
+    background-color: #fff; */
+    width: 487px;
+    height: 548px;
+    position: relative;
+    background-color: #fff;
+}
+.canva-div{
+    margin-left: 2rem;
+}
+#canvas{
+    position: absolute;
+    width: 200px;
+    height: 400px; 
+    left: 0px; 
+    top: 0px; 
+    user-select: none; 
+    cursor: default;
+}
+/* CONTAINER */
+.links{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    padding: 15px 0;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+.links li{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+}
+.link::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0; bottom: 6px;
+    background-color: brown;
+    transition: width 0.3s ease-in-out;
+}
+.link:hover::after{
+    width: 100%;
+}
+.custome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 0rem 5rem; */
+}
+.container{
+    flex: 1 1 40rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.canva-div > p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.change{
+    padding: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tshirt-color{
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+}
+::-webkit-file-upload-button {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+p{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+p kbd{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+#here-appear-theimages{
+    margin-top: 6rem;
+}
