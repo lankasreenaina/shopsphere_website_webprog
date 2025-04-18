@@ -124,7 +124,7 @@ const ShoppingCart = {
           </div>
           <div class="cart-item-details">
             <h4>${item.name}</h4>
-            <div class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</div>
+            <div class="cart-item-price">Rs.${(item.price * item.quantity).toFixed(2)}</div>
             <div class="cart-item-quantity">
               <button class="quantity-btn decrease" data-id="${item.id}">-</button>
               <span>${item.quantity}</span>
