@@ -139,7 +139,7 @@ const ShoppingCart = {
     
     // Update totals
     if (cartTotalElement) {
-      cartTotalElement.textContent = `$${this.calculateTotal()}`;
+      cartTotalElement.textContent = `Rs.${this.calculateTotal()}`;
     }
     
     if (cartCountElement) {
