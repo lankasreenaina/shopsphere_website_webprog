@@ -55,14 +55,13 @@ Welcome to **ShopSphere**, a fully responsive e-commerce platform crafted to del
 
 - 🏠 Homepage
 ![Home page](./assets/screenshots/home.png)
-- News Letter Page
-![News Letter](.\assets\screenshots\image.png)
+
 - 🛍️ Product Page
-![Mens Products](.\assets\screenshots\image1.png)
+![Mens Products](./assets/screenshots/image1.png)
 
-![Women Products](.\assets\screenshots\image2.png)
+![Women Products](./assets/screenshots/image2.png)
 
-![Contact Us](.\assets\screenshots\image3.png)
+![Contact Us](./assets/screenshots/image3.png)
 
 ## 🤝 Contributing
 - Contributions are welcome! Feel free to fork the repo and submit a pull request.
