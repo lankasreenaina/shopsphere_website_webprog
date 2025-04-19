@@ -7,8 +7,8 @@ Welcome to **ShopSphere**, a fully responsive e-commerce platform crafted to del
 
 ---
 ## Teammates Involved
-- **Lanka Sreenaina**: Front-end Development, Design, and Project Management
-- **Pranay Vardhan Sambangi**: Images collection and Testing
+- **Lanka Sreenaina**: Front-end Development, Project Management and Git Hub Management
+- **Pranay Vardhan Sambangi**: Design, Integration and Testing
 - **Varsana RS**: Integration, Testing and Documentation
 
 
